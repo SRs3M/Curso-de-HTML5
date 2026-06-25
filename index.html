@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!--DOCTYPE dice que el contenido es HTML5-->
+<html> <!--HTML es la etiqueta raiz-->
+<head> <!--podemos agregar características-->
+    <title>Mi primera web</title> <!--El título de la página web-->
+</head>
+<body> <!--Todo el contenido de nuestra web va en body-->
+    <article id="Headings">
+        <h1>Mi primer heading</h1> <!--Un título-->
+        <h2>Mi segundo heading</h2> <!--Un subtítulo-->
+        <h3>Mi tercer heading</h3> <!--Un subsubtítulo-->
+        <h4>Mi cuarto heading</h4>
+        <h5>Mi quinto heading</h5>
+        <h6>Chanchito feliz</h6>
+        <!--h7 no existe-->
+    </article>
+    <hr> <!--Un separador-->
+    <article id="Separar líneas, comentarios">
+        <p>Chanchito feliz esta muy feliz</p> <!--Para separar lineas-->
+        <p>Chanchito triste esta muy triste</p> <!--poner en otro <p>-->
+        <h2>Chanchito felipe</h2>
+        <p>Texto un poco mas</p>
+        <!--Un comentario-->
+    </article>
+    <article id="span y br">
+        <!--Span sirve para resaltar dentro de texto-->
+        <!--BR sirve para forzar un salto de línea-->
+        <p>
+            El caballo corria a una velocidad feroz
+            <span style="color:blue" /* Poner el color del resaltado en */>
+                como de otro universo
+            </span>
+            para luego ganar la carrera 
+            <br>
+            en primer lugar
+        </p>
+    </article>
+    <article id="URL & .img">
+        <!--Anchor sirve para llevar a un link-->
+        <a
+            target="_blank" /* Que no se cierre nuestra página al abrir esta URL */
+            href="https://www.google.com" /* Página a donde iremos */>
+                Ir a Google
+        </a>
+        <br><br>
+        <!--Para las imágenes-->
+        <img
+            src=".img/TuffLilBro.jpg" /* Poner la dirección de la imágen */
+            /* height="200" */
+            width="200"/>
+    </article>
+    <hr>
+    <article id="Formularios">
+        <form action="/formulario"/* Dirección de donde se enviará los formularios */ 
+        method="post" /* Cambia a donde te diriges al rellenar los formularios */> 
+            <label /* Especificar el dato solicitado */
+                for="nombre" /* El identificador */>
+                    Nombre
+            </label> 
+            <input 
+                value="chanchito" /*El valor por defecto*/
+                type="text" /* El tipo de comportamiento, Submit = botón, Text = Un campo para llenar, Email, Password para ocultar texto, Radio es un botón de radio, checkbox, file para que pongamos un archivo */
+                id="nombre" /* Ponerle en el id el identificador del label para que al hacer clic en el nombre (label), igual nos lleve al campo que rellenar */
+                name="nombre" /* Cuando llegue a un servidor, Se especifique el Llave-Valor, La llave sera su nombre y el valor sera lo que rellenemos en este campo */
+                placeholder="Nombre" /* Para indicar qué se tiene que poner o un ejemplo (Nombre, Creo que...), aparecera en una letra gris lo que ponemos en el placeholder */ />
+            <br>
+            <label for="apellido">Apellido</label>
+            <input
+                value="feliz"
+                type="text"
+                id="apellido"
+                name="apellido"
+                placeholder="Apellido">
+            <br>
+            <label for="comentario">Comentario</label>
+            <br>
+            <!--Podemos pasarle (casi) las mismas propiedades-->
+            <!--No se puede indentar como las formas anteriores (no se por qué)-->
+            <textarea rows="10" /*Cantidad de filas*/ cols="50" /*Cantidad de columnas*/ id="comentario" placeholder="Ingrese comentario" name="comentario">Este es un valor por defecto</textarea>
+            <br>
+            <!-- <input type="submit"/> El botón de enviar -->
+        </article>
+        <article id="botones">
+            <!--La ventaja con los <button> que no tiene un <input> es que podemos poner más campos de HTML dentro de ellos, ejemplos son las imágenes-->
+            <!--Lo que hace el type="" se especificará en frente de este-->
+            <button type="button" /* se tendrá que especificar su comportamiento en JS */>
+                <img src=".img/Cooking Gas with gas.jpg" width="40">
+                <br>
+                Tipo button
+            </button> 
+            <button type="reset" /* Al rellenar el formulario, pone los valores de las cajas en defecto */>
+                Tipo reset
+            </button>
+            <button type="submit"/* Intentará enviar el formulario a donde se especificó en form */>
+                Tipo submit
+            </button>
+        </article>
+    </form>
+</body>
+</html> 
+<!--Linea n100-->
