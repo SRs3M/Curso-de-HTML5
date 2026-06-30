@@ -2,6 +2,11 @@
 <html> <!--HTML es la etiqueta raiz-->
 <head> <!--podemos agregar características-->
     <title>Mi primera web</title> <!--El título de la página web-->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body> <!--Todo el contenido de nuestra web va en body-->
     <article id="Headings">
@@ -95,6 +100,70 @@
             </button>
         </article>
     </form>
+    <article id="listas">
+        <!--ul es lista no ordenada (Sin enumeración)-->
+        <ul>
+            <li>Elemento 1</li> <!--li es list item-->
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+        <!--ol es lista ordenada (Con enumeración)-->
+        <ol>
+            <!--value indica desde qué numero empezará la numeración-->
+            <li value="50">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <!--Para poner un subelemento(1, 1.1, 1.2, 1.3), poner otra lista en un objeto de lista-->
+            <li>
+                <ol>
+                    <!--Para cambiar el estilo de numeración, poner en style="list-style-type:" para que después de los dos puntos, poner una de las opciones que aparecen en las recomendaciónes-->
+                    <li style="list-style-type: lower-alpha">sub elemento 1</li>
+                    <li style="list-style-type: lower-alpha">sub elemento 2</li>
+                    <li style="list-style-type: lower-alpha">sub elemento 3</li>
+                </ol>
+            </li>
+        </ol>
+    </article>
+    <article id="tablas">
+        <table style="width: 250px;" /* El espaciado entre un objeto y la línea que lo separa de otra columna */> 
+            <!--Para definir la separación entre los objetos de la tabla (table, th, td) se tendrá que especificar en CSS o en el apartado de <style> de este documento (línea 5)-->
+            <!--thead agrupa elementos que pertenecen a la cabecera-->
+            <thead>
+                <!--tr es table row (una fila)-->
+                <tr>
+                    <!--th es una cabecera-->
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <!--tbody agrupa elementos que pertenecen al cuerpo de la tabla-->
+            <tbody>
+                <tr>
+                <!--td se utiliza para definir elementos estándares que se encuentran dentro de las celdas de nuestra tabla-->
+                <td>Matikanetannhauser plushie</td>
+                <td>$49.99</td>
+                </tr>
+                <!--Nueva fila-->
+                <tr>
+                    <!--td se utiliza para definir elementos estándares que se encuentran dentro de las celdas de nuestra tabla-->
+                    <td>Toukai Teiou plushie</td>
+                    <td>$189.99</td>
+                </tr>
+                <tr>
+                    <!--td se utiliza para definir elementos estándares que se encuentran dentro de las celdas de nuestra tabla-->
+                    <td>Agnes Tachyon plushie</td>
+                    <td>$259.99</td>
+                </tr>
+            </tbody>
+            <!--tfoot agrupa elementos que pertenecen al pie de la tabla-->
+            <tfoot>
+                <td>Precio total: </td>
+                <td>$499.97</td>
+            </tfoot>
+        </table>
+    </article>
 </body>
 </html> 
 <!--Linea n100-->
