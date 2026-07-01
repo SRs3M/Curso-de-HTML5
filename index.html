@@ -9,7 +9,7 @@
     </style>
 </head>
 <body> <!--Todo el contenido de nuestra web va en body-->
-    <article id="Headings">
+    <section id="Headings">
         <h1>Mi primer heading</h1> <!--Un título-->
         <h2>Mi segundo heading</h2> <!--Un subtítulo-->
         <h3>Mi tercer heading</h3> <!--Un subsubtítulo-->
@@ -17,16 +17,16 @@
         <h5>Mi quinto heading</h5>
         <h6>Chanchito feliz</h6>
         <!--h7 no existe-->
-    </article>
+    </section>
     <hr> <!--Un separador-->
-    <article id="Separar líneas, comentarios">
+    <section id="Separar líneas, comentarios">
         <p>Chanchito feliz esta muy feliz</p> <!--Para separar lineas-->
         <p>Chanchito triste esta muy triste</p> <!--poner en otro <p>-->
         <h2>Chanchito felipe</h2>
         <p>Texto un poco mas</p>
         <!--Un comentario-->
-    </article>
-    <article id="span y br">
+    </section>
+    <section id="span y br">
         <!--Span sirve para resaltar dentro de texto-->
         <!--BR sirve para forzar un salto de línea-->
         <p>
@@ -38,8 +38,8 @@
             <br>
             en primer lugar
         </p>
-    </article>
-    <article id="URL & .img">
+    </section>
+    <section id="URL & .img">
         <!--Anchor sirve para llevar a un link-->
         <a
             target="_blank" /* Que no se cierre nuestra página al abrir esta URL */
@@ -52,9 +52,9 @@
             src=".img/TuffLilBro.jpg" /* Poner la dirección de la imágen */
             /* height="200" */
             width="200"/>
-    </article>
+    </section>
     <hr>
-    <article id="Formularios">
+    <section id="Formularios">
         <form action="/formulario"/* Dirección de donde se enviará los formularios */ 
         method="post" /* Cambia a donde te diriges al rellenar los formularios */> 
             <label /* Especificar el dato solicitado */
@@ -100,7 +100,7 @@
             </button>
         </article>
     </form>
-    <article id="listas">
+    <section id="listas">
         <!--ul es lista no ordenada (Sin enumeración)-->
         <ul>
             <li>Elemento 1</li> <!--li es list item-->
@@ -125,8 +125,8 @@
                 </ol>
             </li>
         </ol>
-    </article>
-    <article id="tablas">
+    </section>
+    <section id="tablas">
         <table style="width: 250px;" /* El espaciado entre un objeto y la línea que lo separa de otra columna */> 
             <!--Para definir la separación entre los objetos de la tabla (table, th, td) se tendrá que especificar en CSS o en el apartado de <style> de este documento (línea 5)-->
             <!--thead agrupa elementos que pertenecen a la cabecera-->
@@ -163,7 +163,33 @@
                 <td>$499.97</td>
             </tfoot>
         </table>
-    </article>
+    </section>
+    <section id="div">
+        <!--Hoy en día ya no se utiliza <div> ya que hay mejores alternativas como las etiquetas de <section> y <article>-->
+        <div>
+            <p>Soy una etiqueta de "p" entre un div el cual sirve para separar y organizar código</p>
+        </div>
+        <!--Por favor no hacer esto-->
+        <div>
+            <div>
+                <div>
+                    <p>Soy texto dentro de 3 div, donde dos de ellos no hacen nada asi que solo complican la vida</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="id, class y revisitando links">
+        <!--id sirve para interatuar con estos elementos ya sea mediante JS o CSS-->
+        <h1 id="titulo">
+            titulo
+        </h1>
+        <!--Solo se asigna un id a una propiedad. Si se quiere asignar múltiples identificadores se usa class-->
+        <!--Normalmente se utilizan los id en etiquetas de <section> y <article>-->
+        <p class="saludo">hola</p>
+        <p class="saludo">jalo</p>
+        <!--Ir a cierta parte de la página web, en href, escribimos el símbolo de numeral (#) y luego especificamos el id de algo-->
+        <a href="#Headings">Ir al comienzo</a>
+    </section>
 </body>
 </html> 
-<!--Linea n100-->
+<!--Linea n169-->
